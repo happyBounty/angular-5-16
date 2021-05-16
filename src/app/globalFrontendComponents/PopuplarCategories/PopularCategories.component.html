@@ -1,0 +1,34 @@
+<div class="block-space">
+    <div class="container">
+        <div class="block-head text-center mb-5">
+            <h2 class="head-line display-3">
+                {{Title}}
+            </h2>
+            <p class="lead mt-2 head-desc text-primary">{{Desc}}</p>
+        </div>
+    </div>
+    <!-- Categories Carousel -->
+    <div class="fullwidth-carousel-container">
+        <div class="fullwidth-slick-carousel category-carousel">
+            <!-- Item -->
+            <ngx-slick-carousel class="carousel fullwidth-slick-carousel category-carousel"  #slickModal="slick-carousel" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let item of Data" class="slide fw-carousel-item slide">
+                    <div class="category-box-container text-center">
+                        <div  class="category-box">
+                            <div class="category-box-content">
+                                <div class="icon-title">
+                                    <i class="{{item.icon}}"></i>
+                                </div>
+                              <a [routerLink]="['/listing/grid/with-sidebar']">  <h3>{{item.title}}</h3></a>
+                                <span> <small>{{item.subTitle}}</small> </span>
+                            </div>
+                            <div class="category-box-background" [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+    </div>
+    <!-- Categories Carousel / End -->
+</div>

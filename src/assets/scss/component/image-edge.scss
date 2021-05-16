@@ -1,0 +1,121 @@
+/* ---------------------------------- */
+/* Image Edge
+------------------------------------- */
+.image-edge {
+	background-color: #f8f8f8;
+	position: relative;
+	overflow: hidden;
+	margin: 35px 0 0 0;
+	height: 50vw;
+	max-height: 640px;
+	overflow: hidden;
+	padding: 0;
+}
+
+.image-edge #googlemaps,
+.image-edge .google-map-container { height: 100%; }
+
+
+.image-edge-content {
+	padding: 0;
+	top: 50%;
+	position: relative;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	width: 50%;
+	padding: 0 9%;
+}
+
+.image-edge.left .image-edge-content { padding-left: 6%; }
+
+.image-edge-content h3.headline {
+	width: 100%;
+	display: block;
+	margin-top: 0;
+}
+
+/* Photo */
+.edge-bg {
+	position: absolute;
+	width: 50%;
+	top: 0;
+	right: 0px;
+	height: 100%;
+	background-size: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.edge-bg:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(34,34,34,0.1);
+}
+
+
+/* Left-photo version */
+.image-edge.left .image-edge-content { left: 50%;}
+.image-edge.left .edge-bg { left:0px; }
+
+.image-edge.left .container {
+	transform: translateX(54%);
+	-webkit-transform: translateX(54%);
+}
+
+
+/* Styles for dark version  */
+.image-edge.dark { background-color: #282828; color: #fff; }
+
+.image-edge.dark h1,
+.image-edge.dark h2,
+.image-edge.dark h3,
+.image-edge.dark h4,
+.image-edge.dark h5 { color: #fff;}
+
+.presentation-content h2,
+.image-edge h2 {
+	line-height: 56px;
+	font-weight: 600;
+	font-size: 40px;
+	letter-spacing: -0.5px;
+}
+
+.presentation-content p,
+.image-edge p { font-size: 20px; color: #828282; line-height: 34px;}
+.image-edge.dark p { color: rgba(255,255,255,0.8);}
+
+
+/* List */
+.image-edge-content ul {
+	list-style: none;
+	padding: 0;
+}
+
+.image-edge-content ul li { margin-bottom: 30px; }
+.image-edge-content ul li:last-child { margin-bottom: 0px; }
+
+.image-edge-content h4 i {
+	position: relative;
+	top: -1px;
+	margin-right: 2px;
+}
+
+@media (max-width: 767px) {
+	.edge-bg {
+		position: relative;
+		height: 400px;
+		width: 100%;
+		display: block;
+		left: 0;
+		right: 0;
+	}
+}
+
+

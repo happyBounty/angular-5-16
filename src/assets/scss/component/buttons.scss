@@ -1,0 +1,173 @@
+
+
+
+
+/* ------------------------------------------------------------------- */
+/*  03. Shortcodes
+---------------------------------------------------------------------- */
+
+/* ---------------------------------- */
+/* Buttons
+------------------------------------- */
+
+button.button,
+input[type="button"],
+input[type="submit"],
+a.button.border,
+a.button {
+	background-color: #66676b;
+	top: 0;
+	padding: 9px 20px;
+	color: #fff;
+	position: relative;
+	font-size: 15px;
+	font-weight: 600;
+	display: inline-block;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	margin-right: 6px;
+	overflow: hidden;
+	border: none;
+	border-radius: 50px;
+}
+
+
+input[type="button"],
+input[type="submit"] {
+	line-height: 32px;
+}
+
+button.button:before,
+a.button:before {
+	width: 100%;
+	height: 100%;
+	content: "";
+	display: block;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: all 0.2s;
+}
+
+
+button.button:hover:before,
+a.button:hover:before {
+	opacity: 0.1;
+}
+
+a.button.white {
+	background-color: #fff;
+	color: #333;
+}
+
+button.button { line-height: 26px; }
+
+/* Border Button Style */
+a.button.border:before { display: none; }
+
+a.button.border {
+	background-color: transparent;
+	color: #66676b;
+	border: 1px solid #66676b;
+	padding: 9px 21px;
+}
+
+a.button.border:hover {
+	background-color: #66676b;
+	color: #fff;
+	opacity: 1;
+}
+
+a.button.border.white {
+	border-color: #fff;
+	color: #fff;
+}
+
+a.button.border.white:hover {
+	background-color: #fff;
+	color: #66676b;
+}
+
+/* Full Width Button */
+button.button.fullwidth,
+a.button.fullwidth {
+	width: 100%;
+	text-align: center;
+}
+
+a.button.white.border:hover { color: #333; }
+
+.button i { padding-right: 4px; }
+
+.centered-content { text-align: center; }
+.centered-content .button { min-width: 130px;  }
+
+a.button.border { font-weight:500; }
+/* ---------------------------------- */
+/* Share Buttons
+------------------------------------- */
+.share-buttons {
+	padding: 0;
+	list-style: none;
+}
+
+.share-buttons li {
+	display: inline-block;
+	margin: 0 6px 8px 0;
+}
+
+.share-buttons li a {
+	background: #fff;
+	border: 1px solid #666;
+	border-radius: 50px;
+	font-weight: 500;
+	font-size: 13px;
+	padding: 7px 20px;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 17px;
+	font-weight: 500;
+}
+
+.share-buttons li a:hover { color: #fff; }
+
+.share-buttons li i {
+	font-size: 16px;
+	position: relative;
+	right: 3px;
+	top: 1px;
+}
+
+
+
+
+
+/* fb */
+.share-buttons li a.fb-share:hover { background: #3b5998; color: #fff; }
+.share-buttons li a.fb-share {
+	border-color: #3b5998;
+	color: #3b5998;
+}
+
+/* twitter */
+.share-buttons li a.twitter-share:hover { background: #1da1f2; color: #fff; }
+.share-buttons li a.twitter-share {
+	border-color: #1da1f2;
+	color: #1da1f2;
+}
+
+/* gplus */
+.share-buttons li a.gplus-share:hover { background: #dd4b39; color: #fff; }
+.share-buttons li a.gplus-share {
+	border-color: #dd4b39;
+	color: #dd4b39;
+}
+
+/* pinterest */
+.share-buttons li a.pinterest-share:hover { background: #bd081c; color: #fff; }
+.share-buttons li a.pinterest-share {
+	border-color: #bd081c;
+	color: #bd081c;
+}

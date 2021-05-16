@@ -1,0 +1,46 @@
+<map-banner></map-banner>
+<!-- Content -->
+<div class="content">
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+         <!-- Sorting - Filtering Section -->
+         <div class="row my-4">
+            <div class="col-md-6">
+               <!-- Layout Switcher -->
+               <div class="layout-switcher">
+                  <a class="grid active"><span class="round-pill d-block"><i class="fa fa-th"></i></span></a>
+                  <a [routerLink]="['/listing/list/full-width']" class="list"><span class="round-pill d-block"><i class="fa fa-align-justify"></i></span></a>
+               </div>
+            </div>
+         </div>
+         <!-- Sorting - Filtering Section / End -->
+         <div class="row">
+            <!-- Listing Item -->
+            <div class="col-lg-4 col-md-6 grid-layout-list" *ngFor="let list of Data">
+               <div  class="listing-item-container compact">
+                <div class="listing-item mb-4">
+                  <a [routerLink]="['/listing/detail/version2']">  <img src="{{list.image}}" alt=""></a>
+                  
+                    <span class="badge badge-pill badge-primary text-uppercase">{{list.badge}}</span>
+                    <div class="listing-item-content">
+                       <span class="badge badge-pill badge-primary text-uppercase">{{list.category}}</span>
+                       <DirectlistRating [rate]="list.rating"></DirectlistRating>
+                       <a [routerLink]="['/listing/detail/version2']"> <h3>{{list.title}}</h3></a>
+                      
+                       <span> <small> {{list.address}}</small></span>
+                    </div>
+                    <span class="round-pill like-banner d-block bg-primary"><i class="fa fa-heart-o"></i></span>
+                 </div>
+               </div>
+            </div>
+            <!-- Listing Item / End -->
+         </div>
+         <!-- Pagination -->
+         <div class="clearfix"></div>
+         <pagination></pagination>
+         <!-- Pagination / End -->
+      </div>
+   </div>
+</div>
+</div>

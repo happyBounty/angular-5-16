@@ -1,0 +1,210 @@
+/* ---------------------------------- */
+/* Tabs
+------------------------------------- */
+.tabs-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.tabs-nav li a i {
+	padding-right: 5px;
+	font-size: 16px;
+	top: 1px;
+	position: relative;
+}
+
+.tabs-nav li {
+	float: left;
+	line-height: 45px;
+	padding: 0;
+	margin-right: 4px;
+	position: relative;
+	z-index: 12;
+}
+
+.tabs-nav li a,
+.tab-reviews {
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+.tabs-nav li a {
+	border-bottom: 1px solid transparent;
+	color: #333;
+	display: inline-block;
+	outline: none;
+	padding: 7px 15px;
+	text-decoration: none;
+	font-size: 15px;
+	z-index: 11;
+	position: relative;
+	margin-bottom: -1px;
+}
+
+.tabs-nav li a:hover { border-color: #66676b; }
+
+.tab-reviews { color: #aaa; }
+
+.tabs-nav li.active .tab-reviews { color: #fff; }
+.tabs-nav li a:hover,
+.tabs-nav li.active a {
+	border-color: #66676b;
+	color: #66676b;
+	z-index: 11;
+}
+
+.tab-content {
+	padding: 28px 33px;
+	position: relative;
+	z-index: 10;
+	display: inline-block;
+	width: 100%;
+}
+
+.tabs-container {
+	overflow: hidden;
+	width: 100%;
+}
+
+.tab-content p:last-child { margin-bottom: 0; }
+
+
+.style-2 .tabs-container { box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); border-radius: 3px; }
+
+/* Tabs Style 1 */
+.style-1 .tabs-container .tab-content {
+	border: none;
+	border-top: 1px solid #e0e0e0;
+	padding: 30px 0 0 0;
+}
+
+/* Taba Style 3 */
+.style-3 .tabs-nav {
+	text-align: center;
+}
+
+.style-3 .tabs-nav li {
+	float: none;
+	line-height: 32px;
+	padding: 0;
+	margin-right: 4px;
+	position: relative;
+	z-index: 12;
+	display: inline-block;
+	text-align: center;
+}
+
+.style-3 .tabs-nav li a {
+	border: none;
+	color: #333;
+	display: inline-block;
+	outline: none;
+	padding: 7px 24px;
+	text-decoration: none;
+	font-size: 14px;
+	z-index: 11;
+	position: relative;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border-radius: 3px;
+	font-size: 13px;
+}
+
+.style-3 .tabs-nav li a:hover,
+.style-3 .tabs-nav li.active a {
+	border-color: #66676b;
+	background-color: #66676b;
+	color: #fff;
+	z-index: 11;
+}
+
+.style-3 .tabs-container .tab-content {
+	border: none;
+	padding: 30px 0 0 0;
+}
+
+
+/* Tabs Style 4 */
+.style-4 .tabs-nav {
+	width: 35%;
+	display: table-cell;
+}
+
+.style-4 .tabs-container {
+	width: 65%;
+	padding-left: 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.style-4 .tabs-container .tab-content {
+	border: none;
+	padding: 10px 0 0 0;
+}
+
+
+.style-4.tabs { display: table; }
+
+.style-4 .tabs-nav li a {
+	float: none;
+	width: 90%;
+	border: none;
+	padding: 0;
+	background-color: #fff;
+	margin: 0 0 1px 0;
+	border: none;
+	padding: 9px 24px;
+	line-height: 30px;
+	border-radius: 3px;
+}
+
+.style-4 .tabs-nav li.active a {
+	background-color: #66676b;
+	color: #fff;
+}
+
+.style-4 .tabs-nav li {
+	width: 100%;
+
+}
+
+/* Tabs Style 5 */
+.style-5 .tabs-nav li {
+	width: 33.33%;
+}
+
+.stytle-5 .tabs-container .widget-text {
+	position: relative;
+	top: 50px;
+	transform: transitionY(-50%);
+	display: inline-block;
+}
+
+
+.style-5 .tabs-nav {
+	bottom: 5px;
+	position: relative;
+}
+
+.style-5 .tabs-nav li a {
+	border: none;
+	background-color: #f2f2f2;
+	color: #333;
+	border-radius: 4px;
+	padding: 0;
+}
+
+.style-5 .tabs-nav li.active a {
+	background-color: #66676b;
+	color: #fff;
+}
+
+
+.style-5 .tabs-container .tab-content {
+	box-shadow: none;
+	border: none;
+	padding: 20px 0 0 0;
+}

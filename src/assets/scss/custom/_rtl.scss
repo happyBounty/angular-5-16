@@ -1,0 +1,123 @@
+body {
+   overflow-x: hidden;
+ }
+ 
+ @media (max-width: 1199px) {
+   #navigation.style-1 ul a {
+     line-height: 44px;
+     padding: 5px 4px;
+   }
+ }
+ 
+ @media (max-width: 767px) {
+   .footer-links {
+     margin-top: 2rem !important;
+   }
+   .pricing-container {
+     display: block !important;
+     .plan {
+       margin-bottom: 3rem;
+     }
+   }
+   .layout-switcher {
+     margin-bottom: 1.5rem;
+   }
+   .sidebar {
+     margin-top: 2rem;
+   }
+   body #breadcrumbs {
+     position: relative;
+     display: block;
+     ul {
+       padding: 0;
+     }
+   }
+   .list-img-wrap {
+     margin-bottom: 3rem !important;
+     text-align: center;
+     .list-img {
+       width: 200px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 2rem !important;
+     }
+   }
+   body .add-listing-section {
+     padding-left: 1rem;
+     padding-right: 1rem;
+   }
+ }
+ 
+ @media (max-width: 992px) {
+   .grid-full-width.page-search {
+     .text-right {
+       text-align: center !important;
+     }
+     select {
+       padding: 0 0;
+     }
+     .plan.featured {
+       transform: translate(0);
+     }
+   }
+   .fs-content.pt-5.px-5 {
+     padding: 1rem !important;
+   }
+   .tab-content {
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+   }
+   sidebar-layout-two {
+     padding-top: 2rem;
+     display: block;
+   }
+   .order-summary-widget {
+     padding-top: 2rem;
+   }
+   .side-banner {
+     display: none !important;
+   }
+   .site-content .btn.btn-neutral.btn-icon {
+     margin: 0 0 1rem 0;
+   }
+   #dashboard {
+     min-height: 100vh;
+     padding-top: 55px;
+   }
+   .dashboard-content {
+     margin-left: 0;
+   }
+   .responsive-row .d-flex.align-items-center {
+     display: block !important;
+     text-align: center;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .responsive-row {
+     .list-box-listing {
+       display: block;
+     }
+     .list-box-listing-content {
+       padding-left: 0;
+     }
+   }
+   .dashboard-list-box {
+     .buttons-to-right, .button.to-right {
+       position: relative;
+       right: auto;
+       top: auto;
+       -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0%, 0);
+       opacity: 1;
+       transition: 0.4s;
+       box-shadow: none;
+       margin-top: 2rem;
+     }
+   }
+   .listing-item-container.list-layout .listing-item {
+     height: auto;
+     display: block;
+   }
+ }

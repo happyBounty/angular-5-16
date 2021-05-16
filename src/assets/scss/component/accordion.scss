@@ -1,0 +1,123 @@
+/* ---------------------------------- */
+/* Accordion / Toggles
+------------------------------------- */
+
+
+
+.ui-accordion .ui-accordion-header,
+.trigger a {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	padding: 0;
+	line-height: 26px;
+	outline: none;
+	color: #333;
+	font-size: 14px;
+	background-color: #fff;
+	border: 1px solid #e0e0e0;
+	transition: background-color 0.2s, color 0.2s;
+	padding: 16px 27px;
+	margin: -1px 0 0 0;
+}
+
+
+.ui-accordion .ui-accordion-header i,
+.trigger a i {
+	font-size: 18px;
+	top: 1px;
+	position: relative;
+	padding-right: 3px;
+}
+
+.style-2 .ui-accordion .ui-accordion-header i,
+.style-2 .trigger a i {
+	padding-right: 6px;
+}
+
+.style-2 .ui-accordion .ui-accordion-header:hover,
+.style-2 .trigger a:hover { color: #66676b; }
+
+.trigger.active a,
+.ui-accordion .ui-accordion-header-active:hover,
+.ui-accordion .ui-accordion-header-active {
+	background-color: #66676b;
+	border-color: #66676b;
+	color: #fff;
+}
+
+.ui-accordion .ui-accordion-header i,
+.trigger a i {
+	margin: 0 4px 0 0;
+	position: relative;
+}
+
+.ui-accordion .ui-accordion-content,
+.toggle-container {
+	padding: 28px 30px;
+	border: 1px solid #e0e0e0;
+	border-top: none;
+}
+
+.ui-accordion .ui-accordion-content p,
+.toggle-container p { margin: 0; }
+
+
+/* Style 2 of accordions and toggles */
+.style-2 .ui-accordion .ui-accordion-header,
+.style-2 .trigger a {
+	border: none;
+	margin: 0;
+	padding: 27px 0;
+	text-transform: none;
+	font-size: 17px;
+	font-weight: 500;
+	background-color: transparent;
+	color: #333;
+	padding-right: 60px;
+	font-weight: 400;
+}
+
+body .style-2 .ui-accordion .ui-accordion-header,
+body .style-2 .trigger a { text-transform: none; }
+
+.style-2 .ui-accordion .ui-accordion-content,
+.style-2 .toggle-container {
+	padding: 0px 0 30px 0;
+	border: none;
+}
+
+
+.style-2 .trigger.active a,
+.style-2 .ui-accordion .ui-accordion-header-active:hover,
+.style-2 .ui-accordion .ui-accordion-header-active {
+	background-color: transparent;
+	border-color: transparent;
+	color: #66676b;
+	transition: color 0.1s;
+}
+
+.style-2 .ui-accordion .ui-accordion-header,
+.style-2 .ui-accordion .ui-accordion-content,
+.style-2 .toggle-wrap {
+	border-bottom: 1px solid #e0e0e0
+}
+
+.style-2 .ui-accordion .ui-accordion-header-active { border: none; }
+
+.accordion h3 .sl-icon-plus,
+.trigger .sl-icon-plus {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	font-size: 26px;
+	transform: translate3d(0,-50%,0) rotate(0);
+	transition: 0.2s;
+
+}
+.accordion h3.ui-accordion-header-active .sl-icon-plus,
+.trigger.active .sl-icon-plus {
+	margin-top: 2px;
+	transform: translate3d(0,-50%,0) rotate(45deg);
+}
+

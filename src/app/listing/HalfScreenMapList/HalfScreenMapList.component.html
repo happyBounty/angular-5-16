@@ -1,0 +1,87 @@
+<div class="main-wrapper">
+	<div class="fs-container row m-0">
+		 <div class="fs-inner-container col-lg-6 content">
+			 <div class="fs-content pt-5 px-5">
+				 <!-- Search -->
+				 <section class="search">
+					 <div class="row">
+						 <div class="col-md-12">
+							 <!-- Row With Forms -->
+							 <div class="row with-forms">
+								 <!-- Main Search Input -->
+								 <div class="col-md-6">
+									 <div class="form-group">
+										 <input type="text" placeholder="What are you looking for?" class="form-control form-control-alternative">
+									 </div>
+								 </div>
+								 <!-- Main Search Input -->
+								 <div class="col-md-6">
+									 <div class="form-group">
+										 <input type="text" placeholder="Location" class="form-control form-control-alternative">
+									 </div>
+								 </div>
+							  
+							 </div>
+							 <a href="#" class="btn btn-primary">Search</a>
+							 <!-- Row With Forms / End -->
+						 </div>
+					 </div>
+				 </section>
+				 <!-- Search / End -->
+				 <section class="listings-container">
+					 <!-- Sorting / Layout Switcher -->
+					 <div class="row fs-switcher pt-4">
+						 <div class="col-md-6">
+							 <!-- Showing Results -->
+							 <p class="showing-results">14 Results Found </p>
+						 </div>
+					 </div>
+					 <!-- Listings -->
+					 <div class="row fs-listings">
+						 <!-- Listing Item -->
+						 <div class="col-lg-12 col-md-12 mb-4" *ngFor="let list of Data">
+							 <div class="listing-item-container list-layout">
+								 <div [routerLink]="['listing/detail/version1']" class="listing-item">
+									 <!-- Image -->
+									 <div class="listing-item-image">
+										 <img src="{{list.image}}" alt="">
+									 </div>
+									 <!-- Content -->
+									 <div class="listing-item-content">
+										 <span class="badge badge-pill list-banner badge-success text-uppercase">{{list.badge}}</span>
+										 
+										 <div class="listing-item-inner">
+												<DirectlistRating [rate]="list.rating"></DirectlistRating>
+											 <h3> <a href="">{{list.title}}</a> </h3>
+											 <span><small>{{list.address}}</small></span>
+											 <div class="mt-3"><span class="badge badge-pill badge-primary text-uppercase">{{list.category}}</span></div>
+										  
+										 </div>
+										 <span class="round-pill like-banner d-block bg-primary"><i class="fa fa-heart-o"></i></span>
+									 </div>
+									</div>
+							 </div>
+						 </div>
+						 <!-- Listing Item / End -->
+					 </div>
+					 <!-- Listings Container / End -->
+					 <!-- Pagination Container -->
+					 <div class="row fs-listings">
+						 <div class="col-md-12">
+							 <!-- Pagination -->
+							 <div class="clearfix"></div>
+							 <pagination></pagination>
+							 <div class="clearfix"></div>
+							 <!-- Pagination / End -->
+						 </div>
+					 </div>
+					 <!-- Pagination Container / End -->
+				 </section>
+			 </div>
+		 </div>
+		 <div class="fs-inner-container col-lg-6 map-fixed">
+			 <!-- Map -->
+			 <map-banner [layout]="'sidebar'"></map-banner>
+		 </div>
+	 </div>
+</div>

@@ -1,0 +1,110 @@
+/* Number rating*/
+.numerical-rating {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 8px;
+	text-align: center;
+	line-height: 26px;
+	height: 26px;
+	width: 44px;
+	display: inline-block;
+	font-family: "Open Sans";
+	position: relative;
+	border-radius: 50px;
+	letter-spacing: -0.5px;
+	background-color: rgba(255,255,255,0.2);
+	margin: 15px 32px;
+}
+
+.compact .numerical-rating { margin: 0 0 8px 0; }
+
+.numerical-rating:before {	content: attr(data-rating); }
+
+.numerical-rating.high { background-color: #64bc36; }
+.numerical-rating.mid { background-color: #c0c52a; }
+.numerical-rating.low { background-color: #ee3535; }
+
+.infoBox .numerical-rating .rating-counter,
+.numerical-rating .rating-counter {
+	position: absolute;
+	top: 0;
+	left: 14px;
+	width: auto;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 15px;
+	width: 150px;
+	color: #909090;
+}
+
+.infoBox .numerical-rating .rating-counter { left: 12px; }
+
+.infoBox .numerical-rating {
+	margin: 0;
+	font-family: "Open Sans";
+}
+
+
+/* Star Rating */
+.star-rating { display: block; font-size: 17px; }
+
+.listing-item-container .star-rating {
+	padding: 15px 32px;
+}
+
+.star-rating .star {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	float: left;
+	margin-right: 4px;
+	position: relative;
+}
+
+.rating-counter {
+	color: #909090;
+	padding-left: 5px;
+	display: inline-block;
+	font-size: 15px;
+}
+
+.star-rating .rating-counter {
+	top: -1px;
+	position: relative;
+}
+
+.infoBox .star-rating .rating-counter {
+	font-size: 15px;
+	top: -2px;
+}
+
+.star-rating .star.half:after,
+.star-rating .star:before {
+	font-family: "FontAwesome";
+	content: "\f005";
+	display: block;
+	color: #ffc600;
+}
+
+.star-rating .star.empty:before { color: #ddd; }
+
+.rating:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.star-rating .star.half:before { color: #ddd; }
+.star-rating .star.half:after {
+	color: #ffc600;
+	position: absolute;
+	top:0;
+	width: 50%;
+	display: block;
+	height: 100%;
+	overflow: hidden;
+}

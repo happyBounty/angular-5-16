@@ -1,0 +1,128 @@
+/* ---------------------------------- */
+/* Login Register
+------------------------------------- */
+.rememberme {
+	display: block;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.sign-in-form .tabs-container { overflow: visible; }
+
+.sign-in-form .tabs-nav li {
+    line-height: 15px;
+}
+
+.sign-in-form .tabs-nav li a {
+    padding: 0 15px 18px 15px;
+    color: #666;
+}
+
+.sign-in-form .tabs-nav li a:hover,
+.sign-in-form .tabs-nav li.active a {
+    color: #66676b;
+}
+
+.lost_password a { margin: 0; color: #666; font-size: 15px; }
+.lost_password:hover a { color: #66676b; }
+
+.rememberme input {
+	margin: 0 2px 0 0;
+	display: inline-block;
+	min-height: auto;
+	width: auto;
+}
+
+.myaccount input.button {
+	margin-bottom: 0;
+}
+
+.sign-in-form label {
+	position: relative;
+	color: #666;
+	font-size: 15px;
+}
+
+.sign-in-form label input {
+	margin-top: 8px;
+	padding-left: 45px;
+	height: 53px;
+}
+
+.sign-in-form label input[type="checkbox"] {
+	height: auto;
+}
+
+.sign-in-form input {
+	transition: box-shadow 0.2s !important;
+}
+
+.sign-in-form input:focus {
+	transition: box-shadow 0.2s !important;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.07);
+}
+
+.sign-in-form label i {
+	font-size: 21px;
+	color: #a0a0a0;
+	position: absolute;
+	left: 15px;
+	bottom: 13px;
+}
+
+.sign-in-form .button {
+	line-height: 26px;
+	height: auto;
+	min-width: 120px;
+	margin-bottom: 0;
+}
+
+
+/* -------------------------------- */
+/* 404 Error Page
+----------------------------------- */
+#not-found { margin: 40px 0 80px 0; }
+
+#not-found.center { text-align: center; }
+
+#not-found h2 {
+	text-align: center;
+	font-size: 220px;
+	line-height: 210px;
+	font-weight: 500;
+	letter-spacing: -8px;
+}
+
+#not-found p {
+	text-align: center;
+	font-size: 30px;
+	line-height: 48px;
+	display: inline-block;
+	margin-top: 10px;
+	color: #999;
+}
+
+#not-found i {
+	color: #e0e0e0;
+	font-size: 190px;
+	top: 16px;
+	position: relative;
+}
+
+@media (max-width: 767px) {
+	#not-found h2 {
+		font-size: 110px;
+		line-height: 110px;
+	}
+
+	#not-found p {
+		font-size: 20px;
+		line-height: 38px;
+	}
+
+	#not-found i {
+		font-size: 120px;
+		top: 16px;
+	}
+}
+

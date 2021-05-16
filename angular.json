@@ -1,0 +1,168 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angularListing": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "aot": true,
+            "outputPath": "dist/angularListing",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "allowedCommonJsDependencies": [
+              "nouislider"
+            ],
+            "styles": [
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/icon-font.css",
+              "src/assets/css/bootstrap-datepicker.min.css",
+              "src/assets/scss/style.scss",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss",
+              // "node_modules/ngx-bar-rating/themes/br-default-theme.css"
+            ],
+            "scripts": [
+              "src/assets/scripts/jquery-2.2.0.min.js",
+              "src/assets/scripts/bootstrap.min.js",
+              "src/assets/scripts/slick.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js",
+              "src/assets/scripts/magnific-popup.min.js",
+              "src/assets/scripts/counterup.min.js",
+              "src/assets/scripts/jquery-ui.min.js",
+              "src/assets/scripts/jquery.countdown.min.js",
+              "src/assets/scripts/bootstrap-datepicker.min.js",
+              "src/assets/scripts/nouislider.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angularListing:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angularListing:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angularListing:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
+            "styles": [
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/icon-font.css",
+              "src/assets/scss/style.scss",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss",
+              // "node_modules/ngx-bar-rating/themes/br-default-theme.css"
+            ],
+            "scripts": [
+              "src/assets/scripts/jquery-2.2.0.min.js",
+              "src/assets/scripts/bootstrap.min.js",
+              "src/assets/scripts/slick.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js",
+              "src/assets/scripts/magnific-popup.min.js",
+              "src/assets/scripts/counterup.min.js",
+              "src/assets/scripts/jquery-ui.min.js",
+              "src/assets/scripts/jquery.countdown.min.js",
+              "src/assets/scripts/bootstrap-datepicker.min.js",
+              "src/assets/scripts/nouislider.min.js"
+            ],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "angularListing-e2e": {
+      "root": "e2e/",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "angularListing:serve"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "angularListing",
+  "cli": {
+    "analytics": false
+  }
+}

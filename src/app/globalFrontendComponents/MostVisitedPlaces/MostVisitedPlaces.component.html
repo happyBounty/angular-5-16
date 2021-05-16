@@ -1,0 +1,38 @@
+<div class="block-space bg-secondary">
+	 <div class="container">
+		 <div class="block-head text-center mb-5">
+			 <h2 class="head-line display-3">
+				 {{Title}}
+			 </h2>
+			 <p class="lead mt-2 head-desc text-primary">{{Desc}}</p>
+		 </div>
+		 <div class="row">
+			 <div class="col-md-12">
+					<ngx-slick-carousel class="carousel simple-slick-carousel dots-nav" #slickModal="slick-carousel" [config]="slideConfig">
+				        <div ngxSlickItem *ngFor="let place of Data" class="slide carousel-item">
+				            <div class="category-box-container text-center">
+									<div class="listing-item-container">
+										<div class="listing-item text-center">
+									 		<div class="mostviewed-bg" [style.background]="'url(' + place.image + ')'">
+										 		<div class="listing-item-content">
+											 		<div class="list-logo">
+											  			<a [routerLink]="['/listing/detail/version1']" >  <img src="{{place.logo}}" width="80" height="80" alt=""></a>
+											 		</div>
+													<span class="badge badge-pill badge-primary text-uppercase category-banner">{{place.category}}</span>
+													<a [routerLink]="['/listing/detail/version1']" >  <h3>{{place.title}} </h3></a>
+													<p class="mb-0"> <small> {{place.address}}</small></p>
+													<span class="badge badge-pill badge-primary text-uppercase open-close-banner">{{place.badge}}</span>
+												</div>
+												<span class="round-pill like-banner d-block bg-primary"><i class="fa fa-heart-o"></i></span>
+											</div>
+										</div>
+									</div>
+							  </div>
+				        </div>
+				   </ngx-slick-carousel>
+			 </div>
+		 </div>
+	 </div>
+ </div>
+ 
+ 

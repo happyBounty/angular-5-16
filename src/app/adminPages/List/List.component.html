@@ -1,0 +1,33 @@
+<div class="dashboard-content">
+   <div class="row responsive-row">
+      <!-- Listings -->
+      <div class="col-lg-12 col-md-12">
+         <div class="dashboard-list-box mb-5">
+            <div class="db-tile ">
+               <h4>Active Listings</h4>
+            </div>
+            <ul class="row border-grid">
+               <li class="col-sm-6 col-md-6 col-lg-6" *ngFor="let list of Data">
+                  <div class="list-box-listing">
+                     <div class="list-box-listing-img"><a><img src="{{list.image}}" alt=""></a></div>
+                     <div class="list-box-listing-content">
+                        <div class="inner">
+                           <h3><a >{{list.title}}</a></h3>
+                           <span>{{list.address}}</span>
+                           <div class="star-rating" data-rating="5">
+                              <div class="rating-counter">{{list.review}}</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="btn-g pt-4">
+                     <a  class="btn btn-sm btn-primary text-white"><i class="sl sl-icon-note"></i> Edit</a>
+                     <a  class="btn btn-sm btn-danger text-white"><i class="sl sl-icon-close"></i> Delete</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+

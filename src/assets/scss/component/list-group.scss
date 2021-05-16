@@ -1,0 +1,118 @@
+/* ---------------------------------- */
+/* List Styles
+------------------------------------- */
+
+.list-4,
+.list-3,
+.list-2,
+.list-1 {
+	padding: 3px 0 0 0;
+	font-size: 16px;
+}
+
+.list-4 li,
+.list-3 li,
+.list-2 li,
+.list-1 li {
+	list-style: none;
+	margin: 14px 0;
+	line-height: 27px;
+	margin-left: 22px;
+	position: relative;
+}
+
+.list-1.alt li { margin: 12px 0; margin-left: 22px; }
+
+.list-4 li:first-child,
+.list-3 li:first-child,
+.list-2 li:first-child,
+.list-1 li:first-child {
+	margin-top: 0;
+}
+
+
+.list-4 li:before,
+.list-3 li:before,
+.list-2 li:before,
+.list-1 li:before {
+	font-family: "FontAwesome";
+	margin: 0;
+	position: relative;
+	color: #66676b;
+	float: left;
+	margin-left: -22px;
+	display: block;
+}
+
+.list-1.gray li:before {
+	color: #777;
+}
+
+.list-4 li:before { content: "\f192"; font-size: 14px; top: 1px; }
+.list-3 li:before { content: "\f058"; font-size: 15px; top: 1px; }
+.list-2 li:before { content: "\f00c"; font-size: 14px; }
+.list-1 li:before { content: "\f0c8"; font-size: 8px; }
+
+.list-4 li { margin-left: 27px; }
+.list-4 li:before { margin-left: -27px; }
+
+
+/* Numbered Style */
+.numbered ol {
+	counter-reset: li;
+	list-style: none;
+	padding: 0;
+	margin-left: 18px;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.numbered ol li {
+	display: inline-block;
+	padding: 6px 0;
+	width: 100%;
+}
+
+.numbered ol > li::before {
+	content: counter(li);
+	counter-increment: li;
+	font-size: 16px;
+	line-height: 33px;
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	border: 1px solid #333;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0;
+	margin-left: 0;
+	font-weight: 500;
+	color: #333;
+	position: relative;
+	float: left;
+	left: -18px;
+	font-size: 15px;
+	transform: translateY(-10%);
+}
+
+.numbered.color ol > li::before {
+	border: 1px solid #66676b;
+	color: #66676b;
+}
+
+.numbered.color.filled ol > li::before {
+	border: 1px solid #66676b;
+	color: #fff;
+	background-color: #66676b;
+}
+
+mark.color {
+    background-color: #66676b;
+    border-radius: 4px;
+}
+
+mark { border-radius: 4px; }
+
+.demo h1, .demo h2, .demo h3, .demo h4, .demo h5, .demo h6 {
+    line-height: 40px;
+}

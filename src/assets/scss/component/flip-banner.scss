@@ -1,0 +1,95 @@
+/*----------------------------------- */
+/* Flip Banner
+------------------------------------- */
+.flip-banner {
+	display: block;
+	width: 100%;
+	height: 180px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	z-index: 9999;
+}
+
+.flip-banner:after {
+	background-color: #000;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	display: block;
+	z-index: 100;
+	transition: all 0.6s;
+}
+
+.flip-banner:hover:after {
+	opacity: 0.6;
+}
+
+.flip-banner-content {
+	position: relative;
+	top: 50%;
+	z-index: 200;
+}
+
+.flip-banner h2 {
+	font-size: 32px;
+	line-height: 40px;
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+
+.flip-banner-content .flip-visible,
+.flip-banner-content .flip-hidden {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	transform: translateY(-50%);
+	transition: all 0.45s cubic-bezier(.87,-.41,.19,1.44);
+}
+
+
+.flip-banner:hover .flip-banner-content .flip-hidden,
+.flip-banner-content .flip-visible {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(-50%);
+}
+
+.flip-banner:hover .flip-banner-content .flip-visible,
+.flip-banner-content .flip-hidden {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(150%);
+}
+
+.flip-banner:hover .flip-banner-content .flip-visible {
+	transform: translateY(-150%);
+}
+
+
+.flip-banner i { padding: 0 10px; }
+.flip-banner .sl {
+	position: relative;
+	top: 1px;
+	font-size: 26px;
+}
+
+@media (max-width: 767px) {
+	.flip-banner .sl {
+		font-size: 18px;
+	}
+
+	.flip-banner h2 {
+		font-size: 22px;
+		line-height: 34px;
+	}
+}
+

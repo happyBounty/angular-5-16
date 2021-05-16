@@ -1,0 +1,76 @@
+<div id="map-container" class="fullwidth-home-map" *ngIf="Layout == 'header'">
+	<agm-map [latitude]="lat" [longitude]="lng" [zoom]="9" [scrollwheel]="mapScrollWheel">
+		 <agm-marker *ngFor="let marker of markers; let i = index"  [latitude]="marker.lat" [longitude]="marker.lng" [iconUrl]="marker.icon">
+			 <agm-info-window>
+				 <div class="infoBox">
+				 <div class="map-box">
+						<a class="listing-img-container">
+								<!-- <div class="infoBox-close"><i class="fa fa-times"></i></div> -->
+								<img src="{{marker.image}}" alt="">
+								<div class="listing-item-content">
+									<h3>{{marker.title}}</h3>
+									<span><small>{{marker.address}}</small></span>
+								</div>
+						</a>
+				 </div>
+				</div>
+			</agm-info-window>
+		 </agm-marker>
+	</agm-map>
+	<div class="map-banner">
+	<div class="main-search-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 grid-full-width page-search mb-3">
+					<div class="main-search-input mt-0">
+						<div class="col-lg-3 col-sm-12">
+							<div class="form-group">
+								<input type="text" placeholder="What are you looking for?" class="form-control">
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-12">
+							<div class="form-group">
+								<input type="text" placeholder="Location" class="form-control">
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-12">
+							<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+								<option selected>Choose...</option>
+								<option value="1">Hotel</option>
+								<option value="2">Bar</option>
+								<option value="3">Food Courts</option>
+							</select>
+						</div>
+						<div class="col-lg-3 col-sm-12 text-right">
+							<a class="btn main-search-btn btn-radius btn-lg btn-primary text-white"><span class="btn-inner--text">Search</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+	<!-- <a *ngIf="!mapScrollWheel" id="scrollEnabling" title="Enable or disable scrolling on map" (click)="enableDisableScroll()">Enable Scrolling</a>
+	<a *ngIf="mapScrollWheel" id="scrollEnabling" title="Enable or disable scrolling on map" (click)="enableDisableScroll()">Disable Scrolling</a> -->
+</div>
+
+<div id="map-container"  class="sidebar-marker" *ngIf="Layout == 'sidebar'">
+	<agm-map [latitude]="lat" [longitude]="lng" [zoom]="9" [scrollwheel]="mapScrollWheel">
+		 <agm-marker *ngFor="let marker of markers; let i = index"  [latitude]="marker.lat" [longitude]="marker.lng" [iconUrl]="marker.icon">
+			<agm-info-window>
+				<div class="infoBox">
+				<div class="map-box">
+					  <a class="listing-img-container">
+							  <!-- <div class="infoBox-close"><i class="fa fa-times"></i></div> -->
+							  <img src="{{marker.image}}" alt="">
+							  <div class="listing-item-content">
+								  <h3>{{marker.title}}</h3>
+								  <span><small>{{marker.address}}</small></span>
+							  </div>
+					  </a>
+				</div>
+			  </div>
+		  </agm-info-window>
+		 </agm-marker>
+	</agm-map>
+</div>

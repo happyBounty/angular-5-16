@@ -1,0 +1,41 @@
+
+
+
+/* ---------------------------------- */
+/* Map Banner
+------------------------------------- */
+
+
+.map-banner{
+	.main-search-input{
+		background: #fff;
+		input{
+			&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+				color:    #000;
+			}
+			&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			   color:    #000;
+			   opacity:  1;
+			}
+			&::-moz-placeholder { /* Mozilla Firefox 19+ */
+			   color:    #000;
+			   opacity:  1;
+			}
+			&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			   color:    #000;
+			}
+			&::-ms-input-placeholder { /* Microsoft Edge */
+			   color:    #000;
+			}
+			&::placeholder { /* Most modern browsers support this now. */
+			   color:    #000;
+			}
+		}
+		select,input{
+			color:#000;
+		}
+	}
+	.main-search-input-item{
+		border-right:1px solid #eee;
+	}
+}

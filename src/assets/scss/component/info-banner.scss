@@ -1,0 +1,101 @@
+
+
+
+/* ---------------------------------- */
+/* Info Banner
+------------------------------------- */
+.info-banner {
+	display: block;
+	width: 100%;
+	padding: 90px 0;
+	color: #fff;
+	margin: 0;
+}
+
+.info-banner-content {
+	position: relative;
+	z-index: 199;
+}
+
+.info-banner.centered { text-align: center; }
+
+.info-banner-content a.button {
+	margin: 0 20px -15px 20px;
+	position: relative;
+}
+
+.flip-banner h1,
+.flip-banner h2,
+.flip-banner h3,
+.flip-banner h4,
+.flip-banner h5,
+.flip-banner h6,
+.flip-banner a,
+.info-banner-content h1,
+.info-banner-content h2,
+.info-banner-content h3,
+.info-banner-content h4,
+.info-banner-content h5,
+.info-banner-content h6,
+.info-banner-content a,
+.info-banner-content {
+	color: #fff;
+	display: inline-block;
+	margin: 0;
+	position: relative;
+}
+
+
+/* Styles for info banner with parallax */
+.text-content {
+	background: transparent;
+	font-weight: 500;
+	z-index: 999;
+	position: relative;
+}
+
+.text-content.white-font {
+	color: #fff;
+}
+
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5 {
+	color: #fff;
+}
+
+.text-content.white-font h1,
+.text-content.white-font h2,
+.text-content.white-font h3,
+.text-content.white-font h4,
+.text-content.white-font h5 {
+	color: #fff;
+}
+
+.text-content a.button {
+	padding: 10px 26px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.text-content.white-font a.button:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+.text-content a.button:before {
+	display: none;
+}
+
+.text-content p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 34px;
+}
+
+.text-content h2 { margin-bottom: 30px; line-height: 46px; font-size: 36px; font-weight: 500; }
+
+.top-1 { position: relative; top: -1px; }
+.top-0 { position: relative; }

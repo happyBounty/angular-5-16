@@ -1,0 +1,63 @@
+
+/* ---------------------------------- */
+/* Parallax Background
+------------------------------------- */
+
+.parallax{
+   background-image:url('../../../assets/images/slider-parallax.jpg');
+   background-repeat: no-repeat;
+	background-position: 50% 24%;
+	position: relative;
+	z-index: 99;
+   background-attachment: fixed;
+   &:after {
+      background: rgba(0,0,0,0.6);
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+   }
+}
+
+/* fullscreen setup */
+.fullscreen,
+.content-a {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height:auto;
+    min-height:100%;
+}
+
+/* content centering styles */
+.centered-content {
+    position:relative;
+	vertical-align:middle;
+	text-align:center;
+}
+
+
+/* Parallax Overlay */
+.parallax-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+	background-color: #333;
+	opacity: 0.4;
+}
+
+/* Parallax Content */
+.parallax-content {
+	position: relative;
+	z-index: 999;
+	padding: 105px 0;
+}

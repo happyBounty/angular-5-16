@@ -1,0 +1,72 @@
+<div class="main-wrapper">
+<!--Title Bar -->
+<title-bar title="Grid Layout With Sidebar" subtitle="Explore New Places"></title-bar>
+ <!-- Content -->
+ <div class="content">
+ <div class="container">
+	 <div class="row">
+		 <div class="col-lg-9 col-md-8">
+			 <!-- Sorting / Layout Switcher -->
+			 <div class="row mb-4 ">
+				 <div class="col-md-6 col-xs-6">
+					 <!-- Layout Switcher -->
+					 <div class="layout-switcher">
+						 <a class="grid active">
+						 <span class="round-pill d-block"><i class="fa fa-th"></i></span>
+						 </a>
+						 <a [routerLink]="['/listing/list/with-sidebar']" class="list">
+						 <span class="round-pill d-block"><i class="fa fa-align-justify"></i></span></a>
+					 </div>
+				 </div>
+				 <div class="col-md-3 col-xs-6 ml-auto">
+					 <!-- Sort by -->
+					 <div class="sort-by">
+						 <div>
+							 <select data-placeholder="Default order"  class="form-control custom-select">
+								 <option>Default Order</option>
+								 <option>Highest Rated</option>
+								 <option>Most Reviewed</option>
+								 <option>Newest Listings</option>
+								 <option>Oldest Listings</option>
+							 </select>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+			 <!-- Sorting / Layout Switcher / End -->
+			 <div class="row">
+				 <!-- Listing Item -->
+				 <div class="col-lg-6 col-md-12 grid-layout-list" *ngFor="let list of Data">
+					 <a  class="listing-item-container">
+						 <div class="listing-item mb-4">
+						  <a [routerLink]="['/listing/detail/version1']">  <img src="{{list.image}}" alt=""></a>
+						  
+							 <span class="badge badge-pill badge-primary text-uppercase">{{list.badge}}</span>
+							 <div class="listing-item-content">
+									
+								 <span class="badge badge-pill badge-primary text-uppercase">{{list.category}}</span>
+								 <DirectlistRating [rate]="list.rating"></DirectlistRating>
+								 <h3>{{list.title}}</h3>
+								 <span> <small> {{list.address}}</small></span>
+							 </div>
+							 <span class="round-pill like-banner d-block bg-primary"><i class="fa fa-heart-o"></i></span>
+						 </div>
+						  
+					 </a>
+				 </div>
+				 <!-- Listing Item / End -->
+			 </div>
+			 <!-- Pagination -->
+			 <div class="clearfix"></div>
+			 <pagination></pagination>
+			 <!-- Pagination / End -->
+		 </div>
+		 <!-- Sidebar -->
+		 <div class="col-lg-3 col-md-4">
+			 <sidebar-layout-one></sidebar-layout-one>
+		 </div>
+		 <!-- Sidebar / End -->
+	 </div>
+ </div>
+</div>
+ </div>

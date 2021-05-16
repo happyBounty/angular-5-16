@@ -1,0 +1,48 @@
+/* Custom Zoom Buttons
+------------------------------------- */
+.custom-zoom-in,
+.custom-zoom-out {
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+	border-radius: 50%;
+	margin: 5px 15px;
+	transition: color 0.3s, background-color 0.3s;
+	box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	font-size: 15px;
+	height: 34px;
+	width: 34px;
+}
+
+.custom-zoom-in:hover,
+.custom-zoom-out:hover {
+	background-color: #66676b;
+	color: #fff;
+}
+
+.custom-zoom-in:before,
+.custom-zoom-out:before  {
+	font-family: "FontAwesome";
+	width: 100%;
+	line-height: 35px;
+	transition: -webkit-text-stroke 0.3s;
+	-webkit-text-stroke: 1px #fff;
+}
+
+.zoomControlWrapper {
+	position: absolute;
+	left: 0;
+	right: auto;
+	width: 70px;
+}
+
+.custom-zoom-in:before { content: "\f067"; }
+.custom-zoom-out:before  { content: "\f068"; }
+
+
+.custom-zoom-in:hover:before,
+.custom-zoom-out:hover:before  { -webkit-text-stroke: 1px #66676b;  }
+
+
+

@@ -1,0 +1,30 @@
+
+
+/* Badges */
+.listing-item { overflow: hidden; }
+
+.listing-badge {
+	background-color: #333;
+	float: left;
+	position: absolute;
+	transform: rotate(45deg);
+	right: -64px;
+	top: 22px;
+	text-align: center;
+	width: 200px;
+	font-size: 12.5px;
+	margin: 0;
+	z-index: 999;
+	color: #fff;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+
+.listing-badge.now-open {
+	background-color: #54ba1d;
+}
+
+.listing-badge.now-closed {
+	background-color: #e91721;
+}

@@ -1,0 +1,21 @@
+.block-space{
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+.category-box{
+	&:before {
+		background: linear-gradient(-20deg, rgb(94,114,228) 0%, rgb(33, 212, 253) 100%);
+		opacity: 0.2;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	&:hover{
+		opacity: 0.9;
+	}
+}
+
+
+

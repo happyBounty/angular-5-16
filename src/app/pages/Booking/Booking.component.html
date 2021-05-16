@@ -1,0 +1,142 @@
+
+<div class="main-wrapper">
+<!--Title Bar -->
+<title-bar title="Booking Form" subtitle="Fill details for booking"></title-bar>
+ <!-- Container -->
+ <div class="content">
+	 <div class="container">
+		 <div class="row">
+			 <!-- Content -->
+			 <div class="col-lg-8 col-md-8 padding-right-30">
+				 <h4 class="mb-4">Personal Details</h4>
+				 <div class="row mb-4">
+					 <div class="col-md-6">
+						 <div class="form-group">
+							 <input type="text" placeholder="First Name" class="form-control form-control-alternative">
+						 </div>
+					 </div>
+					 <div class="col-md-6">
+						 <div class="form-group">
+							 <input type="text" placeholder="Last Name" class="form-control form-control-alternative">
+						 </div>
+					 </div>
+					 <div class="col-md-6">
+						 <div class="form-group">
+							 <input type="text" placeholder="E mail" class="form-control form-control-alternative">
+						 </div>
+					 </div>
+					 <div class="col-md-6">
+						 <div class="form-group">
+							 <input type="text" placeholder="Phone" class="form-control form-control-alternative">
+						 </div>
+					 </div>
+				 </div>
+				 <h4 class="mb-3">Payment Method</h4>
+				 <div class="nav-wrapper">
+					 <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+						 <li class="nav-item">
+							 <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="fa fa-credit-card mr-2"></i>Credit/Debit Card</a>
+						 </li>
+						 <li class="nav-item">
+							 <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="fa fa-paypal  mr-2"></i>Paypal</a>
+						 </li>
+					 </ul>
+				 </div>
+				 <div class="card shadow">
+					 <div class="card-body">
+						 <div class="tab-content" id="myTabContent">
+							 <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+								 <form action="">
+									 <div class="row">
+										 <div class="col-md-12">
+											 <div class="form-group">
+												 <input type="text" placeholder="Name" class="form-control form-control-alternative">
+											 </div>
+										 </div>
+										 <div class="col-md-12">
+											 <div class="form-group">
+												 <input type="text" placeholder="Card Number" class="form-control form-control-alternative">
+											 </div>
+										 </div>
+										 <div class="col-md-6">
+											 <select class="custom-select mb-4 form-control-alternative">
+												 <option selected>Month</option>
+												 <option value="January">January</option>
+												 <option value="February">February</option>
+												 <option value="March">March</option>
+												 <option value="April"> 	April</option>
+												 <option value="May">May</option>
+												 <option value="June">June</option>
+												 <option value="July">July</option>
+												 <option value="August">August</option>
+												 <option value="September">September</option>
+												 <option value="October">October</option>
+												 <option value="November"> 	November</option>
+												 <option value="December"> 	December</option>
+											 </select>
+										 </div>
+										 <div class="col-md-6">
+											 <select class="custom-select mb-4 form-control-alternative">
+												 <option selected>Year</option>
+												 <option value="2018">2018</option>
+												 <option value="2019">2019</option>
+												 <option value="2020">2020</option>
+												 <option value="2021">2021</option>
+												 <option value="2022">2022</option>
+												 <option value="2023">2023</option>
+											 </select>
+										 </div>
+										 <div class="col-md-12">
+											 <div class="form-group">
+												 <input type="text" placeholder="CVV" class="form-control form-control-alternative">
+											 </div>
+										 </div>
+										 <div class="col-md-12">
+											 <button class="btn btn-primary" type="button">Submit</button>
+										 </div>
+									 </div>
+								 </form>
+							 </div>
+							 <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+								 <p>Paypal is easiest way to pay online</p>
+								 <p>
+									 <button type="button" class="btn btn-primary"> <i class="fa fa-paypal"></i> Log in my Paypal </button>
+								 </p>
+								 <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									 tempor incididunt ut labore et dolore magna aliqua. 
+								 </p>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+			 <!-- Sidebar -->
+			 <div class="col-lg-4 col-md-4">
+				 <!-- Booking Summary -->
+				 <div class="order-summary-widget">
+					 <div class="listing-item">
+						 <img src="assets/images/cat-img-2.jpg" alt="">
+						 <div class="listing-item-content pt-3">
+							<div><span class="badge badge-pill list-banner badge-success text-uppercase">5.0</span></div> 
+							 <h3>Burger House</h3>
+							 <span><small>   2726 Shinn Street, New York</small></span>
+						 </div>
+					 </div>
+				 </div>
+				 <div class="bg-secondary p-4">
+					 <h4><i class="fa text-primary fa-calendar-check-o"></i> Booking Summary</h4>
+					 <ul class="summery">
+						 <li>Date <span>10/20/2017</span></li>
+						 <li>Time<span>5:30 PM</span></li>
+						 <li>Person <span>2 Adults</span></li>
+						 <li class="total-costs">Total Cost <span>$546.00</span></li>
+					 </ul>
+				 </div>
+				 <!-- Booking Summary / End -->
+			 </div>
+		 </div>
+	 </div>
+ </div>
+</div>
+ 
+ 

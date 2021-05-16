@@ -1,0 +1,56 @@
+<div class="position-relative">
+   <!-- Hero for FREE version -->
+   <section class="section section-lg section-hero section-shaped">
+      <!-- Background circles -->
+      <div class="shape shape-style-1 shape-primary">
+         <span class="span-150"></span>
+         <span class="span-50"></span>
+         <span class="span-50"></span>
+         <span class="span-75"></span>
+         <span class="span-100"></span>
+         <span class="span-75"></span>
+         <span class="span-50"></span>
+         <span class="span-100"></span>
+         <span class="span-50"></span>
+         <span class="span-100"></span>
+         <div class="overlay-bg"></div>
+      </div>
+      <div class="container shape-container d-flex align-items-center py-lg">
+         <div class="main-search-inner">
+            <h2 class="text-white display-2">{{Title}}</h2>
+            <h4 class="text-white">{{Desc}}</h4>
+            <div class="main-search-input">
+               <div class="main-search-input-item">
+                  <input type="text" placeholder="What are you looking for?" value="" />
+               </div>
+               <div class="main-search-input-item location">
+                  <div id="autocomplete-container">
+                     <input id="autocomplete-input" type="text" placeholder="Location">
+                  </div>
+                  <a href="#"><i class="fa fa-map-marker"></i></a>
+               </div>
+               <div class="main-search-input-item">
+                  <select data-placeholder="All Categories" class="chosen-select custom-select">
+                     <option>All Categories</option>
+                     <option>Shops</option>
+                     <option>Hotels</option>
+                     <option>Restaurants</option>
+                     <option>Fitness</option>
+                     <option>Events</option>
+                  </select>
+               </div>
+               <a href="#" class="btn main-search-btn btn-radius btn-lg btn-white" [routerLink]="['/listing/list/with-sidebar']">
+               <span class="btn-inner--text">Search</span>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- SVG separator -->
+      <div class="separator separator-bottom separator-skew zindex-100">
+         <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+         </svg>
+      </div>
+   </section>
+</div>
+

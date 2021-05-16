@@ -1,0 +1,8 @@
+<div id="listing-gallery" class="listing-section">
+   <h3 class="listing-desc-headline margin-top-70">{{Title}}</h3>
+   <div class="listing-slider-small mfp-gallery-container margin-bottom-0">
+      <ng-container *ngFor="let gallery of Data">
+         <a href="{{gallery.image}}" [ngStyle]="{'background-image': 'url(' + gallery.image + ')'}" class="item mfp-gallery"></a>
+      </ng-container>
+   </div>
+</div>

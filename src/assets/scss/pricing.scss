@@ -1,0 +1,77 @@
+/* Pricing Menu List
+------------------------------------- */
+
+.pricing-list-container {
+   h4 {
+     color: #66676b;
+     background-color: #fff;
+     border-bottom: 1px solid #66676b;
+     width: 100%;
+     padding: 30px;
+     border-radius: 4px 4px 0 0;
+     position: relative;
+     z-index: 10;
+     margin: 5px 0 0 0;
+     display: block;
+     font-weight: 500;
+     &:after {
+       width: 100%;
+       height: 100%;
+       border-radius: 4px 4px 0 0;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       content: "";
+       background-color: #66676b;
+       opacity: 0.05;
+       z-index: 9;
+     }
+   }
+   ul {
+     list-style: none;
+     padding: 0;
+     margin-bottom: 35px;
+     &:last-child {
+       margin-bottom: 25px;
+     }
+     li {
+       padding: 15px 0;
+       padding-right: 70px;
+       position: relative;
+       &:last-child {
+         border-radius: 0 0 4px 4px;
+       }
+     }
+   }
+   p {
+     padding: 0;
+     font-size: 15px;
+     margin: 0;
+     display: inline-block;
+     width: 100%;
+   }
+   h5 {
+     padding: 0;
+     font-size: 15px;
+     margin: 0;
+     display: inline-block;
+     width: 100%;
+     font-size: 18px;
+     margin-bottom: 1px;
+   }
+   p {
+     color: #777;
+     line-height: 24px;
+     margin-top: 3px;
+   }
+   span {
+     position: absolute;
+     right: 30px;
+     top: 50%;
+     transform: translateY(-50%);
+     display: inline-block;
+     font-size: 18px;
+     color: #777;
+   }
+ }

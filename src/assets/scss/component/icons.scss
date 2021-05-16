@@ -1,0 +1,220 @@
+
+
+/* Icon Box #2
+------------------------------------- */
+.icon-box-2 {
+	text-align: center;
+	margin-top: 45px;
+	position: relative;
+}
+
+.icon-box-2 i {
+	width: 120px;
+	height: 80px;
+	background-color: #fff;
+	border-radius: 50%;
+	line-height: 80px;
+	font-size: 60px;
+	display: inline-block;
+	margin-bottom: 10px;
+	text-align: center;
+	overflow: hidden;
+	color: #66676b;
+	position: relative;
+	z-index: 11;
+}
+
+.icon-box-2 span {
+	color: #666;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.icon-box-2 h4 {
+	margin: 4px 0;
+	line-height: 26px;
+}
+
+.icon-box-2 h3 {
+	margin: 4px 0;
+	line-height: 26px;
+	font-size: 19px;
+	font-weight: 500;
+}
+
+.icon-box-2 p {
+	margin-top: 20px;
+	font-style: 16px;
+}
+
+.icon-box-2 i.im-icon-Mail-withAtSign {font-size: 58px; top: 2px;}
+
+.icon-box-2.with-line:before {
+	content: "";
+	height: 1px;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 40px;
+	background: #e9e9e9;
+	display: block;
+	z-index: 9;
+}
+
+
+/* Icon Box #3
+------------------------------------- */
+.icon-box-3 {
+	text-align: left;
+	padding-left: 90px;
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	margin: 20px 0;
+}
+
+/* Edge Icon Box */
+.icon-box-3 h4 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.icon-box-3 i {
+	font-size: 54px;
+	color: #333;
+	height: 60px;
+	margin: 10px 0;
+	display: inline-block;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+
+.icon-box-3 p {
+	color: rgba(51,51,51,0.7);
+	margin-top: 3px;
+	display: inline-block;
+}
+
+
+/* Rounded */
+.icon-box-1.rounded i,
+.icon-box-2.rounded i,
+.icon-box-3.rounded i {
+	width: 110px;
+	height: 110px;
+	background-color: #666;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 110px;
+	font-size: 50px;
+	display: inline-block;
+	margin-bottom: 20px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.rounded i:before {
+	position: relative;
+	z-index: 11;
+}
+
+
+
+/* Background Animation */
+.icon-box-1.rounded i,
+.icon-box-2.rounded i,
+.icon-box-3.rounded i{
+	transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	transform: translate3d(0,0,0) rotate(0);
+}
+
+body .icon-box-1.rounded:hover i,
+body .icon-box-2.rounded:hover i,
+body .icon-box-3.rounded:hover i {
+	color: #fff;
+}
+
+
+/* Icon Box Shadow Animation*/
+.icon-box-1.rounded i:after,
+.icon-box-2.rounded i:after,
+.icon-box-3.rounded i:after {
+	content: "";
+	width: 120%;
+	height: 0px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	z-index: 8;
+	transition: height 0.3s ease-in-out, opacity 0.3s ease-out;
+	opacity: 0;
+	transform: translate3d(50%,-50%,0) scale(1) rotate(45deg);
+}
+
+.icon-box-1.rounded:hover i:after,
+.icon-box-2.rounded:hover i:after,
+.icon-box-3.rounded:hover i:after { height: 145%; opacity: 0.1; }
+
+
+/* Dark and Light Icon Box Styles */
+.icon-box-1.rounded.dark i,
+.icon-box-2.rounded.dark i,
+.icon-box-3.rounded.dark i{
+	background-color: #222;
+}
+
+.icon-box-1.rounded.light i,
+.icon-box-2.rounded.light i,
+.icon-box-3.rounded.light i{
+	color: #333;
+	background-color: #f2f2f2;
+}
+
+.icon-box-3.rounded {
+	padding-left: 120px;
+}
+
+.icon-box-3.rounded i {
+	width: 90px;
+	height: 90px;
+	font-size: 40px;
+	line-height: 90px;
+}
+
+/* White colors */
+body .white-text {color: #fff; }
+
+.white-text .icon-box-1 p,
+.white-text .icon-box-2 p,
+.white-text .icon-box-3 p,
+.white-text .icon-box-4 p { color: rgba(255,255,255,0.85); }
+
+.white-text h1,
+.white-text h2,
+.white-text h3,
+.white-text h4,
+.white-text h5,
+.white-text .icon-box-1 h4,
+.white-text .icon-box-2 h4,
+.white-text .icon-box-3 h4,
+.white-text .icon-box-4 h4,
+.white-text .icon-box-1 i,
+.white-text .icon-box-2 i,
+.white-text .icon-box-3 i,
+.white-text .icon-box-4 i { color: #fff; }
+
+
+@media (max-width: 1659px) {
+	.icon-box-3.rounded { padding-left: 110px; }
+
+	.icon-box-3.rounded i {
+		width: 80px;
+		height: 80px;
+		font-size: 38px;
+		line-height: 80px;
+	}
+}

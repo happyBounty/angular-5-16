@@ -1,0 +1,111 @@
+/* ---------------------------------- */
+/* Notification Boxes
+------------------------------------- */
+#result .success,
+.notification {
+	line-height: 24px;
+	margin-bottom: 15px;
+	position: relative;
+	padding: 20px 26px;
+	padding-right: 50px;
+	border-radius: 3px;
+}
+
+.notification p { margin: 0; font-size: 15px; }
+
+#result .success,
+.notification.success {
+	background-color: #EBF6E0;
+}
+
+#result .success,
+.notification.success,
+.notification.success a,
+.notification.success strong {
+	color: #5f9025;
+}
+
+.notification.error {
+	background-color: #ffe9e9;
+}
+.notification.error,
+.notification.error a,
+.notification.error strong {
+	color: #de5959;
+}
+
+.notification.warning {
+	background-color: #FBFADD;
+}
+.notification.warning,
+.notification.warning a,
+.notification.warning strong {
+	color: #8f872e;
+}
+
+.notification.notice h4 { font-size: 19px; margin: 3px 0 15px 0; }
+.notification.notice h4,
+.notification.notice,
+.notification.notice a,
+.notification.notice strong {
+	color: #3184ae
+}
+
+.notification.notice {
+	background-color: #E9F7FE;
+}
+
+.notification.notice.large{
+	padding: 32px 36px;
+}
+
+#dashboard .success {
+	background-color: #e6f3d8;
+}
+
+#dashboard .notice {
+	background-color: #e1f3fc;
+}
+
+#dashboard .warning {
+	background-color: #f6f4c9;
+}
+
+
+body .notification strong { border: none; }
+
+.notification.success .close,
+.notification.error .close,
+.notification.warning .close,
+.notification.notice .close {
+	padding: 0px 9px;
+	position: absolute;
+	right: 0;
+	top: 22px;
+	display: block;
+	height: 8px;
+	width: 8px;
+	cursor: pointer;
+}
+
+.notification.notice p span i { font-weight: 500; }
+.notification a.button {
+	float: right;
+	color: #fff;
+	margin-top: 3px;
+}
+
+.notification.notice a.button { background-color: #388fc5; }
+.notification.warning a.button { background-color: #dfbe51; }
+.notification.error a.button { background-color: #d34c4c; }
+.notification.success a.button { background-color: #79ba38; }
+
+.notification.closeable a.close:before {
+	content: "\f00d";
+	font-family: "FontAwesome";
+	position: absolute;
+	right: 25px;
+	top: 0;
+	cursor: pointer;
+}
+

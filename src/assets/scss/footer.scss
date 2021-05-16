@@ -1,0 +1,114 @@
+/*----------------------------------- */
+/* Footer
+------------------------------------- */
+
+#footer {
+   background-color: #fff;
+   border-top: 1px solid rgba(0, 0, 0, 0.09);
+   font-size: 16px;
+   &.sticky-footer {
+     box-shadow: none;
+   }
+   &.dark {
+     border-top: none;
+   }
+   h4 {
+     color: #333;
+     font-size: 21px;
+     margin-bottom: 25px;
+   }
+ }
+ 
+ .footer-shadow {
+   width: 100%;
+   display: block;
+   background: #fff;
+   height: 200px;
+   margin-top: -200px;
+   position: relative;
+   z-index: -1;
+   box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.06);
+ }
+ 
+ .text-widget span {
+   color: #707070;
+   &.address {
+     display: block;
+     margin-bottom: 10px;
+   }
+ }
+ 
+ #footer {
+   a {
+     color: #66676b;
+   }
+   ul.footer-links {
+     margin: 0 0 15px 0;
+     padding: 0;
+     width: 50%;
+     box-sizing: border-box;
+     display: inline-block;
+     float: left;
+   }
+   .footer-links li {
+     position: relative;
+     list-style: none;
+     a {
+       padding: 0 0 9px 16px;
+       display: inline-block;
+       -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+       -ms-transition: all 0.2s ease-in-out;
+       transition: all 0.2s ease-in-out;
+       color: #707070;
+       line-height: 21px;
+       &:hover {
+         padding-left: 22px;
+         color: #66676b;
+       }
+     }
+     &:before {
+       font-family: "FontAwesome";
+       font-size: 20px;
+       content: "\f105";
+       position: absolute;
+       left: 0;
+       top: -2px;
+       padding: 0 7px 0 0;
+       color: #ccc;
+     }
+   }
+ }
+ 
+ /*  Links  */
+ 
+ /* Footer Bottom */
+ 
+ .copyrights {
+   color: #707070;
+   border-top: 1px solid rgba(255, 255, 255, 0.09);
+   margin-top: 60px;
+   text-align: center;
+   padding: 40px 0;
+   display: inline-block;
+   width: 100%;
+ }
+ 
+ #footer.alt .copyrights {
+   margin-top: 0;
+   border: none;
+   padding: 25px;
+ }
+ 
+ .copyrights a {
+   color: #707070;
+ }
+ 
+ #footer .social-icons li a {
+   opacity: 0.8;
+   transition: opacity 0.35s;
+   &:hover {
+     opacity: 1;
+   }
+ }

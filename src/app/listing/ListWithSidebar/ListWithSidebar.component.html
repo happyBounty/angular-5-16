@@ -1,0 +1,75 @@
+<div class="main-wrapper">
+<!--Title Bar -->
+<title-bar title="List Layout With Sidebar" subtitle="Explore New places here"></title-bar>
+<!-- Content -->
+<div class="content">
+ <div class="container">
+	 <div class="row">
+		 <div class="col-lg-9 col-md-8 padding-right-30">
+			 <!-- Sorting / Layout Switcher -->
+			 <div class="row mb-4">
+				 <div class="col-md-6 col-xs-6">
+					 <!-- Layout Switcher -->
+					 <div class="layout-switcher">
+						 <a [routerLink]="['/listing/grid/with-sidebar']" class="grid"> <span class="round-pill d-block"><i class="fa fa-th"></i></span></a>
+						 <a class="list active"><span class="round-pill d-block"><i class="fa fa-align-justify"></i></span></a>
+					 </div>
+				 </div>
+				 <div class="col-md-3 ml-auto col-xs-6">
+					 <!-- Sort by -->
+					 <div class="sort-by">
+							 <select data-placeholder="Default order" class="form-control form-control-alternative custom-select ">
+								 <option>Default Order</option>
+								 <option>Highest Rated</option>
+								 <option>Most Reviewed</option>
+								 <option>Newest Listings</option>
+								 <option>Oldest Listings</option>
+							 </select>
+					 </div>
+				 </div>
+			 </div>
+			 <!-- Sorting / Layout Switcher / End -->
+			 <div class="row">
+				 <!-- Listing Item -->
+				 <div class="col-lg-12 col-md-12" *ngFor="let list of Data">
+					 <div class="listing-item-container list-layout mb-4">
+						 <div  class="listing-item">
+							 <!-- Image -->
+							 <div class="listing-item-image">
+								<a [routerLink]="['/listing/detail/version1']"> <img src="{{list.image}}" alt=""></a>
+							 </div>
+							 <!-- Content -->
+							 <div class="listing-item-content">
+									
+								 <span class="badge badge-pill list-banner badge-success text-uppercase">{{list.badge}}</span>
+								 <div class="listing-item-inner">
+										<DirectlistRating [rate]="list.rating"></DirectlistRating>
+										<a [routerLink]="['/listing/detail/version1']">   <h3>{{list.title}}</h3></a>
+									 <span> <small>{{list.address}}</small> </span>
+									 <div class="mt-3"><span class="badge badge-pill badge-primary text-uppercase">{{list.category}}</span></div>
+									 
+								 </div>
+								 <span class="round-pill like-banner d-block bg-primary"><i class="fa fa-heart-o"></i></span>
+							 </div>
+							</div>
+					 </div>
+				 </div>
+				 <!-- Listing Item / End -->
+			 </div>
+			 <!-- Pagination -->
+			 <div class="clearfix"></div>
+			<pagination></pagination>
+			 <!-- Pagination / End -->
+		 </div>
+		 <!-- Sidebar-->
+		 <div class="col-lg-3 col-md-4">
+			 <sidebar-layout-one></sidebar-layout-one>
+		 </div>
+		 <!-- Sidebar / End -->
+	 </div>
+ </div>
+</div>
+</div>
+
+
+ 
